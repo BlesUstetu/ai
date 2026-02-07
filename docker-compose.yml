@@ -7,11 +7,11 @@ services:
     env_file:
       - ./backend/.env
 
-  frontend:
+  Frontend:
     image: node:18
     working_dir: /app
     volumes:
-      - ./frontend:/app
+      - ./Frontend:/app
     command: sh -c "npm install && npm run dev"
     ports:
       - "5173:5173"
